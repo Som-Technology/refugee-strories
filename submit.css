@@ -1,0 +1,337 @@
+* {
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+box-sizing: border-box;
+
+}
+body{
+  
+
+  background: url(https://foreignpolicy.com/wp-content/uploads/2019/08/Syria-refugee-children-camp-Turkey.jpg?w=1500);
+}
+
+.contaiiner {
+  width: 400px;
+  max-width: 400px;
+  margin: 95px 25px 30px 100px;
+  padding: 90px 100px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+  background: #eee7
+}
+
+.contaiiner,
+.form__input,
+.form__button {
+  font: 500 1rem 'Quicksand', sans-serif;
+}
+
+.form--hidden {
+  display: none;
+}
+
+.form > *:first-child {
+  margin-top: 0;
+}
+
+.form > *:last-child {
+  margin-bottom: 0;
+}
+
+.form__title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  border: 1px solid #dddddd;
+  outline: none;
+  background: #eeeeee;
+  transition:  0.2s, border-color 0.2s;
+}
+
+
+.form__input:focus {
+  border-color: var(--color-primary);
+  background: #ffffff;
+}
+
+.form__input--error {
+  color: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.form__input-error-message {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-error);
+}
+
+.form__button {
+  width: 50%;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #0000CC;
+  width: 100%;
+  border: none;
+  border-radius: var(--border-radius);
+  outline: none;
+  cursor: pointer;
+  background: var(--color-primary);
+}
+
+.form__button:hover {
+  background: var(--color-primary-dark);
+}
+
+.form__button:active {
+  transform: scale(0.98);
+}
+
+.form__text {
+  text-align: center;
+}
+
+.form__link {
+  color: var(--color-secondary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form__link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+nav {
+position: fixed;
+z-index: 10;
+left: 0;
+right: 0;
+top: 0;
+font-family: 'Montserrat', sans-serif;
+padding: 0 5%;
+height: 100px;
+background-color: #132953;
+  opacity: 80%;
+}
+nav .logo {
+float: left;
+width: 40%;
+height: 100%;
+display: flex;
+align-items: center;
+font-size: 24px;
+color: #fff;
+}
+nav img{
+  width: 40px;
+  height: 30px;
+  float: left;
+  margin-top: 32px;
+  margin-left: -600px;
+  display: flex;
+}
+nav .links {
+float: right;
+padding: 0;
+margin: 0;
+width: 60%;
+height: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+nav .links li {
+list-style: none;
+}
+
+nav .links li a:hover{
+  background-color:lightgreen;
+  border-radius: 30px;
+  color: black;
+  border: none;
+}
+nav .links a {
+display: block;
+padding: 1em;
+font-size: 16px;
+font-weight: bold;
+color: #fff;
+text-decoration: none;
+}
+#nav-toggle {
+position: absolute;
+top: -100px;
+}
+nav .icon-burger {
+display: none;
+position: absolute;
+right: 5%;
+top: 50%;
+transform: translateY(-50%);
+}
+nav .icon-burger .line {
+width: 30px;
+height: 5px;
+background-color: #fff;
+margin: 5px;
+border-radius: 3px;
+transition: all .3s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+nav .logo {
+  float: none;
+  width: auto;
+  justify-content: center;
+}
+nav .links {
+  float: none;
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  top: 100px;
+  bottom: 100%;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgba(0,0,0,.8);
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: all .5s ease-in-out;
+}
+nav .links a {
+  font-size: 20px;
+}
+nav :checked ~ .links {
+  bottom: 0;
+}
+nav .icon-burger {
+  display: block;
+}
+nav :checked ~ .icon-burger .line:nth-child(1) {
+  transform: translateY(10px) rotate(225deg);
+}
+nav :checked ~ .icon-burger .line:nth-child(3) {
+  transform: translateY(-10px) rotate(-225deg);
+}
+nav :checked ~ .icon-burger .line:nth-child(2) {
+  opacity: 0;
+}
+
+}
+
+
+.active-link {
+  border-bottom: 3px solid red;
+}
+
+.sub-footer{
+  height: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.sub-footer p{
+  text-align: center;
+  padding-top: 15px;
+}
+
+
+.containar{
+max-width: 1170px;
+margin-top:50px;
+}
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+ul{
+list-style: none;
+}
+.footer{
+background-color: #24262b;
+  padding: 70px 0;
+  padding: 1px;
+}
+.footer-col{
+ width: 25%;
+ padding: 0 15px;
+}
+.footer-col h4{
+font-size: 18px;
+color: #ffffff;
+text-transform: capitalize;
+margin-bottom: 35px;
+font-weight: 500;
+position: relative;
+}
+.footer-col h4::before{
+content: '';
+position: absolute;
+left:0;
+bottom: -10px;
+background-color: #e91e63;
+height: 2px;
+box-sizing: border-box;
+width: 50px;
+}
+.footer-col ul li:not(:last-child){
+margin-bottom: 10px;
+}
+.footer-col ul li a{
+font-size: 16px;
+text-transform: capitalize;
+color: #ffffff;
+text-decoration: none;
+font-weight: 300;
+color: #bbbbbb;
+display: block;
+transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+color: #ffffff;
+padding-left: 8px;
+}
+.footer-col .social-links a{
+display: inline-block;
+height: 40px;
+width: 40px;
+background-color: rgba(255,255,255,0.2);
+margin:0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+color: #24262b;
+background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+.footer-col{
+  width: 50%;
+  margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+.footer-col{
+  width: 100%;
+}
+}
